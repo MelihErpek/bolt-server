@@ -37,9 +37,9 @@ mongoose.connect(
 );
 
 //OpenAI API connection
-// const openai = new OpenAI({
-//   apiKey: process.env.DB_HOST,
-// });
+const openai = new OpenAI({
+  apiKey: process.env.DB_HOST,
+});
 
 // Defines a simple GET route that returns a JSON response to confirm the API is working.
 app.get("/", async (req, res) => {
