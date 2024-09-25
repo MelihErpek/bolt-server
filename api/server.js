@@ -19,10 +19,11 @@ app.use(
     parameterLimit: 100000000,
   })
 );
-
+const url =
+  "mongodb+srv://melihnode:meliherpek1@cluster0.g1oel.mongodb.net/UM?authSource=admin&replicaSet=atlas-77ie5j-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
 //Mongoose connection
 mongoose.connect(
-  process.env.URL,
+  url,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
