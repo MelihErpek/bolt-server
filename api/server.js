@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const {  OpenAI } = require("openai");
 const Sessions = require("./Models/Sessions.js");
-require('dotenv').config();
+require('dotenv').config({ path: '../../.env' });
 const port = 5000;
 const app = express();
 app.use(express.json());
