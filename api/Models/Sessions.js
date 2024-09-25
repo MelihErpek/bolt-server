@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const sessionSchema = new Schema({
-  sessionIDs: {
+  sessionID: {
     type: String,
   },
   sessionStart: {
