@@ -23,7 +23,7 @@ app.use(
 
 // Defines a simple GET route that returns a JSON response to confirm the API is working.
 app.get("/", async (req, res) => {
-  res.json("API working");
+  res.json(process.env.URL);
 });
 
 
