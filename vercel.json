@@ -2,11 +2,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "server.js"
+      "dest": "./server.js"
     }
   ],
   "functions": {
-    "server.js": {
+    "./server.js": {
       "maxDuration": 300
     }
   }
