@@ -22,7 +22,7 @@ app.use(
 
 //Mongoose connection
 mongoose.connect(
-  "mongodb+srv://melihnode:meliherpek1@cluster0.g1oel.mongodb.net/BoltInsight?authSource=admin&replicaSet=atlas-77ie5j-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
+  process.env.URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
