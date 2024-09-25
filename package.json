@@ -5,13 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node api/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "builds": [
-      {
-        "src": "api/server.js",
-        "use": "@vercel/node"
-      }
-    ]
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "keywords": [],
   "author": "",
