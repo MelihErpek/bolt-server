@@ -9,6 +9,11 @@
     "api/server.js": {
       "maxDuration": 300
     }
-  }
+  },
+  ,
+  "crons": [{
+    "path": "/",
+    "schedule": "*/15 * * * *"
+  }]
 
 }
