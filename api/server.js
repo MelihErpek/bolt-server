@@ -46,7 +46,8 @@ const openai = new OpenAI({
 
 // Defines a simple GET route that returns a JSON response to confirm the API is working.
 app.get("/", async (req, res) => {
-  res.json("API working");
+  let session = await Sessions.findOne({});
+  res.json(session);
 });
 
 // Handles the first message in a session by creating a thread, sending the user's message to OpenAI, waiting for the assistant's response, and returning the assistant's reply along with the thread ID.
