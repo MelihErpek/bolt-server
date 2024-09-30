@@ -27,6 +27,9 @@ mongoose.connect(
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
+    autoReconnect: true, 
+    reconnectTries: Number.MAX_VALUE, 
+    reconnectInterval: 5000 
   },
   (err) => {
     if (err) {
